@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلويات الختش و رمزي - طلب جديد</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; 
+            color: #ffffff;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #1e1e1e;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 450px;
+            border: 2px solid #d4af37; 
+        }
+        .logo-text {
+            text-align: center;
+            color: #d4af37;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .sub-text {
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+            text-align: right;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #444;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input:focus, textarea:focus {
+            border-color: #d4af37;
+            outline: none;
+            background-color: #333;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #d4af37; 
+            color: #121212;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #b89321;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="logo-text">حلويات الخُتّش و رمزي</div>
+    <div class="sub-text">سجل طلبك الآن وسنتواصل معك مباشرة</div>
+    
+    <form action="https://formspree.io/f/mdavabjj" method="POST">
+        
+        <div class="form-group">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="الاسم" placeholder="اكتب اسمك الكامل" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="الهاتف" placeholder="0XXXXXXXXX" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">البريد الإلكتروني (اختياري):</label>
+            <input type="email" id="email" name="الإيميل" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="message">تفاصيل الطلب (نوع الحلوى أو الوجبة والكمية):</label>
+            <textarea id="message" name="الطلب" placeholder="مثال: علبة حلويات مشكلة، نوع معينات..." required></textarea>
+        </div>
+
+        <button type="submit">إرسال الطلب</button>
+    </form>
+</div>
+
+</body>
+</html>
